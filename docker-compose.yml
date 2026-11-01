@@ -1,0 +1,12 @@
+
+services:
+  postgres:
+    image: postgres:17
+    container_name: backend_api
+    restart: always
+    environment:
+      POSTGRES_DB: backend_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: "1234"
+    ports:
+      - "5427:5432"
